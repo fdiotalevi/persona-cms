@@ -1,0 +1,5 @@
+title: about page
+author: John Doe
+date: 1900/01/01
+
+<h1>About John</h1>
