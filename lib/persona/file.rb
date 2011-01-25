@@ -1,5 +1,6 @@
+require 'yaml'
+  
 class File
-  require 'yaml'
   
   def content_as_string
     doc_started = false

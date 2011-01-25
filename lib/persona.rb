@@ -4,6 +4,11 @@ require 'bundler'
 require 'sinatra'
 require 'builder'
 
+require File.join(File.dirname(__FILE__), './persona', 'file')
+autoload :Post, 'persona/post'
+autoload :Page, 'persona/page'
+
+
 #ROUTES
 
 get '/' do   
@@ -11,8 +16,7 @@ get '/' do
   erb :index
 end
 
-get '/f
-eed/' do
+get '/feed/' do
   builder do |xml|
     xml.instruct! :xml, :version => '1.0'
     xml.rss :version => "2.0" do
