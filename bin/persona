@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require '../lib/tasks/persona_tasks'
+require File.join(File.dirname(__FILE__), "..", "lib", "tasks", "persona_tasks")
 
 
 def create_site(name)
