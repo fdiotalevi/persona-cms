@@ -1,0 +1,5 @@
+== Persona
+
+Persona is a minimal personal content manager.
+In this stage it's a work in progress, without much documentation.
+
