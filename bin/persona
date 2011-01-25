@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require '../lib/tasks/persona_tasks'
+
+
+def create_site(name)
+  p Dir.new('.').entries
+end
+  
+if (ARGV.length == 2 and ARGV[0] == 'create_site')
+  PersonaTasks.create_site Dir.new('.'), ARGV[1]
+end  
+  
