@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'erb'
-require 'bundler'
 require 'sinatra'
 require 'builder'
 
