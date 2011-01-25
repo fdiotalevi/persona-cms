@@ -3,3 +3,13 @@
 Persona is a minimal personal content manager.
 In this stage it's a work in progress, without much documentation.
 
+
+$ gem install persona
+$ persona create_site myblog
+$ cd myblog 
+
+and then start any Rack compatible HTTP server
+
+done.
+
+(I'll post more details soon, promised)

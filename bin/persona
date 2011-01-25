@@ -8,5 +8,6 @@ end
   
 if (ARGV.length == 2 and ARGV[0] == 'create_site')
   PersonaTasks.create_site Dir.new('.'), ARGV[1]
+  p "site created"
 end  
   
