@@ -15,10 +15,12 @@ In this stage it's a work in progress, without much documentation.
 Prerequisites
 -------------
 You need to have
+
 1. Ruby (1.8.7 or 1.9.2) 
 2. RubyGems
 3. git
 4. a Rack compatible HTTP Server 
+
 installed on your machine.
 
 If you don't have a Rack server, or you don't know what is it, after you have installed Ruby and RubyGems just type
