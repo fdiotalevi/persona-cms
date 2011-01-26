@@ -1,4 +1,5 @@
 site:
-    title: Filippo Diotalevi
-    description: Startups, Technology and News
-    url: 'http://diotalevi.com'
+    title: A sample website
+    description: ...powered by an awsome personal cms!
+    author: Myself
+    url: 'http://localhost'
