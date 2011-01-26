@@ -3,12 +3,11 @@ body {
   margin: 0 auto;
   font-family: Georgia, 'Baskerville', Times, serif;
   font-size: 18px;
-  line-height: 27px;
   padding: 15px;
   width: 780px;
 
 }
-header, footer, section, article {
+header, footer, section, article, logobar {
 	display: block;
 }
 
@@ -16,7 +15,20 @@ body > header {
 	height: 30px;
 	font-size: 16px;
 	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+body > logobar {
+	vertical-align: top;
 	margin-bottom: 60px;
+}
+
+body > logobar h1 {
+	font-size: 54px;
+}
+
+body > logobar h2 {
+	font-size: 20px;
 }
 
 #content {
@@ -101,6 +113,7 @@ blockquote {
 
 body > footer {
   text-align: left;
+  margin-top:90px;
   margin-left: 10px;
 	font-style: italic;
   font-size: 18px;
