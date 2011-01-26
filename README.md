@@ -58,11 +58,11 @@ Have a look at the sample provided in your website.
 
 Every file specifies in the first 3 rows some metadata (title, author and date) and, after a blank line, the HTML content of the page/post.
 
-To add a new page, just create another .txt file in the /contents/page folder.  If the file is called myfile.txt, it will immediately be visible at http://localhost/pages/myfile
+To add a new page, just create another .txt file in the /contents/page folder.  If the file is called myfile.txt, it will immediately be visible at http://localhost:3000/pages/myfile
 
 To add a new blog post, create a .txt file with this naming convention:
     <year>-<month>-<day>-<post_title>.txt
-The blog post will be immediately visible under  http://localhost/<year>/<month>/<date>/<post_title>
+The blog post will be immediately visible under  http://localhost:3000/year/month/date/post_title
 	
 	
 Customize
@@ -73,6 +73,16 @@ The folders
     views
     config
 contain files you can customize. Have a look!
+
+What to do next
+---------------
+
+A few things you might want to do next
+
+1. open a github account and project, and upload your website there
+2. open a Heroku account, and deploy your website there
+
+Note that, since your website doesn't use a database, you can use the Heroku free plan!
 
 
 
