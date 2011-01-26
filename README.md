@@ -4,20 +4,21 @@ Persona
 Persona is a minimal personal content manager. It is designed for geeks: you need to have Ruby and Git installed in your machine, and know how to use it. However, you don't need to be a Ruby developer.
 
 Principles:
-*   it's for geeks
-*   it's minimal (150 lines of code at the moment)
-*   leverage cloud services and infrastructure
-*   lets you create a website for free (no hosting fees)
+
+* it's for geeks
+* it's minimal (150 lines of code at the moment)
+* leverage cloud services and infrastructure
+* lets you create a website for free (no hosting fees)
 
 In this stage it's a work in progress, without much documentation.
 
 Prerequisites
 -------------
 You need to have
- 1. Ruby (1.8.7 or 1.9.2) 
- 2. RubyGems
- 3. git
- 4. a Rack compatible HTTP Server 
+1. Ruby (1.8.7 or 1.9.2) 
+2. RubyGems
+3. git
+4. a Rack compatible HTTP Server 
 installed on your machine.
 
 If you don't have a Rack server, or you don't know what is it, after you have installed Ruby and RubyGems just type
