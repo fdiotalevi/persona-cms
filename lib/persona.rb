@@ -11,7 +11,7 @@ autoload :Page, 'persona/page'
 #ROUTES
 
 get '/' do   
-  @posts = load_posts
+  @posts = Post.all
   erb :index
 end
 
@@ -62,16 +62,5 @@ end
 
 not_found do
   erb :not_found
-end
-
-
-def load_posts
-  posts = Dir.entries('./contents/posts').sort.reverse.reject do |it|
-    not it.end_with? '.txt'
-  end
-      
-  posts.map do |it|
-    Post.new it
-  end  
 end
 

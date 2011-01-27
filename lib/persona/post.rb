@@ -2,8 +2,10 @@ class Post
   
   attr_reader :content, :title, :author, :url, :date, :excerpt, :is_excerpt
   
+  POST_FOLDER = './contents/posts'
+  
   def initialize(file_name)
-    f = File.open("./contents/posts/#{file_name}","r")
+    f = File.open("#{POST_FOLDER}/#{file_name}","r")
     @content =  f.content_as_string
     @title = f.metadata 'title'
     @author = f.metadata 'author'  
@@ -20,6 +22,16 @@ class Post
   
   def self.from_url(y,m,d,name)
     Post.new "#{y}-#{m}-#{d}-#{name}.txt"    
+  end
+  
+  def self.all
+    posts = Dir.entries("#{POST_FOLDER}").sort.reverse.reject do |it|
+      not it.end_with? '.txt'
+    end
+
+    posts.map do |it|
+      Post.new it
+    end  
   end
   
   private
